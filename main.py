@@ -1,5 +1,6 @@
 from Garden.Plant import Plant
 from library.Author import Author
+from university.Student import Student
 
 #sukurti 3 objektus su reikšmėmis naudojantis tuščiu konstruktoriu, ir tris naudojantis pilnu konstuktoriu.
 # sudėti juos į autorių masyvą.
@@ -66,3 +67,16 @@ plants = [plant1, plant2, plant3, plant4]
 
 for plant in plants:
     print(plant)
+
+print("---------------------------------------------------------------------------")
+
+#sukurti metodą get_age() kuris gražintų tikslų, gražiai suformatuotą amžių su metais, mėnesiais ir dienomis
+# sukurti metodą, kuris padavus disciplinos pavadinimą gražintų jos pažymių vidurkį
+# sukurti metodą, kuris paskaičiuotų visų disciplinų(int) vidurkių vidurkį(double). galima kurtis pagalbines funkcijas.
+# parašyti __str__ kuris gražiai atspausdintų visą išsamią, gražiai suformatuotą studento informaciją
+#
+# Vėliau studentą išskaidysime į kelias klases.
+
+
+sudent1 = Student("Jonas", "Jonaitis", (1983,8,28), "matematika")
+print(sudent1)
