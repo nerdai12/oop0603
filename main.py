@@ -1,3 +1,5 @@
+from datetime import datetime, date
+
 from Garden.Plant import Plant
 from library.Author import Author
 from university.Student import Student
@@ -78,5 +80,5 @@ print("-------------------------------------------------------------------------
 # Vėliau studentą išskaidysime į kelias klases.
 
 
-sudent1 = Student("Jonas", "Jonaitis", (1983,8,28), "matematika")
-print(sudent1)
+student1 = Student("Jonas", "Jonaitis", date(1983,8,28), "matematika")
+print(student1)
