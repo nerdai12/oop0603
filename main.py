@@ -1,3 +1,4 @@
+from Garden.Plant import Plant
 from library.Author import Author
 
 #sukurti 3 objektus su reikšmėmis naudojantis tuščiu konstruktoriu, ir tris naudojantis pilnu konstuktoriu.
@@ -41,4 +42,27 @@ print("-------------------------------------------------------------------------
 #Susikuriam masyvą saugoti augalams. sukuriame 4 augalus (2x2 pagal konstruktorius)
 #prasukti ciklą ir atspausdinti augalus
 
+plant1 = Plant()
+plant1.pavadinimas = "Morka"
+plant1.lotyniskas_pavadinimas = "Daucus carota"
+plant1.vienmetis = True
+plant1.zemynas = "Europa"
+plant1.aukstis = 0.3
+plant1.valgomas = True
 
+plant2 = Plant()
+plant2.pavadinimas = "Rožė"
+plant2.lotyniskas_pavadinimas = "Rosa"
+plant2.vienmetis = False
+plant2.zemynas = "Azija"
+plant2.aukstis = 1.5
+plant2.valgomas = False
+
+
+plant3 = Plant("Pomidoras", "Solanum lycopersicum", True, "Pietų Amerika", 0.8, True)
+plant4 = Plant("Kaktusas", "Cactaceae", False, "Šiaurės Amerika", 2.0, False)
+
+plants = [plant1, plant2, plant3, plant4]
+
+for plant in plants:
+    print(plant)
